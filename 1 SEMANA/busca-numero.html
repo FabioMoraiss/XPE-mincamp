@@ -1,0 +1,25 @@
+<html>
+    <script>
+
+        //1- recerber um numeor como parametro
+        //2- executar um for na lista e verificar se o elemento é igual
+        //3- linterromper quando encontrar
+        // 4- se nao encontrar, retornar false
+        var lista = [19, 54, 18, 11, 47, 98, 36, 44, 87];
+
+
+        function verificar(numero) {
+            var existe = false;
+            for(var i = 0; i<lista.length; i++) {
+                console.log(i);
+                if(lista[i] === numero) {
+                    existe = true;
+
+                    break;
+                }
+            }
+            return existe;
+
+        }
+    </script>
+</html>

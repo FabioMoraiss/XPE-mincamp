@@ -1,0 +1,29 @@
+<html>
+    <script>
+        function verificar(numero) {
+            var primo = true
+
+            if(numero === 1 || numero === 0) {
+             primo = false;
+            } else if(numero <0) {
+                primo = false;
+
+            } else {
+                for(var i = 2; i<numero; i++) {
+                if(numero % i === 0) {
+                    primo = false;
+                    break;
+                }
+            }
+            }
+            
+            if(primo == true) {
+                console.log("o numero " +numero +" é primo")
+            }
+            else {
+                console.log("o numero " +numero+ " NÃO é primo")
+            }
+            
+        }
+    </script>
+</html>
